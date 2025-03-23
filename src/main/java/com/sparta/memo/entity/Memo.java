@@ -18,4 +18,12 @@ public class Memo {
         this.title = dto.getTitle();
         this.contents = dto.getContents();
     }
+
+    public void updateTitle(MemoRequestDto dto) {
+        this.title = dto.getTitle();
+    }
 }
+
+// entity : DB와 직접 연결
+// dto : 데이터를 담아서 이동하는 객체
+// 그러니까 dto는 통신용이고 entity의 자료 중에 보여줄 것만 추려내서 보여주는건가?
